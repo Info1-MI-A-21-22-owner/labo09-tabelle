@@ -50,11 +50,11 @@ Voulez-vous recommencer [y/n] ? : y
 
 Livret le plus élevé ? (1..15) : 2
 
-  X |  1 |  2 
-----+----+----
-  1 |  1 |  2 
-----+----+----
-  2 |  2 |  4 
+ X | 1 | 2 
+---+---+---
+ 1 | 1 | 2 
+---+---+---
+ 2 | 2 | 4 
 
 Voulez-vous recommencer [y/n] ? : n
 
