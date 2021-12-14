@@ -17,7 +17,7 @@ int digit_number(double nbr)
     return 0;
 }
 
-char ask_yes_or_no(char* text)
+char ask_yes_or_no(char text[])
 {
     do
     {
@@ -33,7 +33,7 @@ char ask_yes_or_no(char* text)
     } while (true);
 }
 
-int ask_int(char* text, int min_val, int max_val)
+int ask_int(char text[], int min_val, int max_val)
 {
     int choice = 0;
     bool correct = false;
@@ -62,7 +62,7 @@ int menu()
     puts("\t2. Version");
     puts("\t0. Quitter");
 
-    return ask_int(">", 0, 3);
+    return ask_int(">", 0, 2);
 }
 
 int main()
