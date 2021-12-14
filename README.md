@@ -32,7 +32,7 @@ Veuillez choisir une option :
 
 > 1
 
-Livret le plus élevé ? (1..15) : 5
+Livret le plus élevé ? (1..15) [15]: 5
 
   X |  1 |  2 |  3 |  4 |  5
 ----+----+----+----+----+----
@@ -48,7 +48,7 @@ Livret le plus élevé ? (1..15) : 5
 
 Voulez-vous recommencer [y/n] ? : y
 
-Livret le plus élevé ? (1..15) : 2
+Livret le plus élevé ? (1..15) [15]: 2
 
  X | 1 | 2 
 ---+---+---
@@ -174,6 +174,20 @@ Vous **devez** faire une fonction pour afficher la ligne séparatrice
 ```console
 ----+----+----+----+----+----
 ```
+
+## Bonus - valeur par défaut
+Très souvent dans les programmes avec une saisie, une valeur par défaut est proposée par exemple entre crochets.
+
+Voici un exemple avec une valeur par défaut proposée pour le programme.
+
+```console
+Livret le plus élevé ? (1..15) [15]: 5
+```
+
+Dans ce cas, si la touche `enter` est pressée alors qu'aucune valeur n'a été saisie,
+la valeur entre crochets est utilisée.
+
+La partie bonus consiste à implémenter une valeur par défaut lorsque la valeur du livret est demandée.
 
 ## Liste des livrables
 `Commit` sur github, le délai est donné sur Cyberlearn.
