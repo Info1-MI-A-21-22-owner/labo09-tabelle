@@ -189,5 +189,31 @@ la valeur entre crochets est utilisée.
 
 La partie bonus consiste à implémenter une valeur par défaut lorsque la valeur du livret est demandée.
 
+
+Le code suivant pourrait vous être utile.
+```c
+#include <stdio.h>
+#include <string.h>
+
+
+int main()
+{
+    printf("Test scanf\n");
+    
+    char txt[6];
+    
+    int ret = scanf("%5[^\n]", txt);
+    if( ret != 0 ){
+        while( (c = getchar()) != '\n' ){}
+    }
+    
+    printf("Size : %ld\n", strlen(txt));
+    printf("Ret : %d\n", ret);
+    printf("str : %s\n", txt);
+    
+    return 0;
+}
+```
+
 ## Liste des livrables
 `Commit` sur github, le délai est donné sur Cyberlearn.
