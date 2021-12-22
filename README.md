@@ -203,7 +203,7 @@ int main()
     char txt[6];
     
     int ret = scanf("%5[^\n]", txt);
-    while( (c = getchar()) != '\n' ){}
+    while( getchar() != '\n' ){}
     
     printf("Size : %ld\n", strlen(txt));
     printf("Ret : %d\n", ret);
